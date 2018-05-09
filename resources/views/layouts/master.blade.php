@@ -7,9 +7,20 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" href="../../favicon.ico">
-    <title>@yield('title')</title>
+    <title>Welcome</title>
+    <!-- Bootstrap core CSS -->
+    <link href="//v4-alpha.getbootstrap.com/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="/css/blog.css" rel="stylesheet">
   </head>
   <body>
-  <h1>@yield('h1')</h1>
+    @include('layouts.nav')
+    <div class="container">
+      <div class="row">
+        @yield('posts')
+        @include('layouts.sidebar')
+      </div><!-- /.row -->
+    </div><!-- /.container -->
+    @include('layouts.footer')
   </body>
 </html>
