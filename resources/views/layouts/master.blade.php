@@ -17,7 +17,9 @@
     @include('layouts.nav')
     <div class="container">
       <div class="row">
-        @yield('posts')
+        <div class="col-sm-8 blog-main">
+            @yield('posts')
+        </div>
         @include('layouts.sidebar')
       </div><!-- /.row -->
     </div><!-- /.container -->
