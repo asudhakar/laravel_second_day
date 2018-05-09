@@ -1,4 +1,7 @@
 @extends ('layouts.master')
+@section('create')
+    active
+@endsection
 @section ('posts')
     <h2>Publish a Post</h2>
     <hr>
