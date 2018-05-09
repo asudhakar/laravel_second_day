@@ -28,10 +28,8 @@ class PostsController extends Controller
         // $post->save();
 
         // another way
-
-        Post::Create(request()->all());
-
-
+        
+        Post::Create(request(['title', 'body']));
         return redirect('/');
         
     }
