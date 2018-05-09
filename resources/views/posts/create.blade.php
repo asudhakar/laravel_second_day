@@ -2,6 +2,7 @@
 @section ('posts')
     <h2>Publish a Post</h2>
     <hr>
+    @include('layouts.errors')
     <form method="POST" action="/posts">
 
         {{ csrf_field() }}
