@@ -13,6 +13,8 @@
 
   <div class="blog-header">
     <div class="container">
-      <h1 class="blog-title">Sudhakar's Blog</h1>
+      @if(Auth::check())
+        <h1 class="blog-title">{{ Auth::user()->name }}'s Blog</h1>
+      @endif
     </div>
   </div>
